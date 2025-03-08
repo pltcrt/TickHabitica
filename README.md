@@ -1,7 +1,7 @@
 # TickHabitica. Release v1.1 - Integration Service
 
 ## Overview
-Release version 7.2 is a Python-based integration service designed to sync tasks between different platforms. This release integrates data from a source API and sends the processed data to a target API. The system allows fetching data, transforming it according to a predefined mapping, and posting the transformed data to a new endpoint.
+Release version 1.1 is a Python-based integration service designed to sync tasks between different platforms. This release integrates data from a source API and sends the processed data to a target API. The system allows fetching data, transforming it according to a predefined mapping, and posting the transformed data to a new endpoint.
 
 ## Configuration (config.py)
 The config.py file stores all the settings for API interactions, such as URLs for GET and POST requests, query parameters, and field mappings.
@@ -14,18 +14,14 @@ This module handles API requests: both GET and POST requests are made using the 
 Functions:
 * get_data(url): Fetches data from a URL with the provided headers.
 * post_data(data): Sends data to a specified POST URL.
+* fetch_data(): Retrieves the data from the source API.
+* map_fields(data): Maps the fetched data to the target format.
+* send_data(task): Sends the mapped data to the target API.
 
 ## Mapper (mapper.py)
 This module is responsible for transforming the raw data according to the mapping configuration defined in config.py.
 Functions:
 * map_data(raw_data): Processes the raw task data and maps it based on the configuration.
-
-## Main Script (main.py)
-This is the entry point for the application, which ties everything together: fetching, transforming, and posting data.
-Functions:
-* fetch_data(): Retrieves the data from the source API.
-* map_fields(data): Maps the fetched data to the target format.
-* send_data(task): Sends the mapped data to the target API.
 
 ## Conclusion
 This integration service efficiently fetches task data from one platform, transforms it as per the defined configuration, and sends it to another platform. It supports flexible configuration and can be adapted for different use cases by changing the mapping and endpoints in config.py.
