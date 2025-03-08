@@ -3,7 +3,7 @@
 
 CONFIG = {
     "auth": {
-        "url": "https://ticktick.com/open/v1/project/6780df39ebbe9b000000063e/data",
+        "url": "https://ticktick.com/open/v1/project/6780df39ebbe9b000000063e/data",  # URL для GET-запроса
         "headers": {
             "Authorization": "Bearer e5893689-9387-40de-a21b-1e315d4361a4",
             "Content-Type": "application/json"
@@ -14,15 +14,9 @@ CONFIG = {
         "headers": {
             "x-api-user": "1e05932d-5154-450d-8c7a-d7f6c00e5475",
             "x-api-key": "7b50d847-a7ba-432c-bca2-7d573c3c61bd",
-            "Content-Type": "application/json" }        
-    },
-    "mapping": {
-        "title": "text",
-        "content": "notes",
-        "type": "todo"
+            "Content-Type": "application/json" }   
     }
 }
-
 # config. url
 # 65f01bf9ca9ace5a5f5dc704
 # 65f01cf9ca9ace5a5f5dc89e

@@ -1,4 +1,4 @@
-# TickHabitica. Release v1 - Integration Service
+# TickHabitica. Release v1.1 - Integration Service
 
 ## Overview
 Release version 7.2 is a Python-based integration service designed to sync tasks between different platforms. This release integrates data from a source API and sends the processed data to a target API. The system allows fetching data, transforming it according to a predefined mapping, and posting the transformed data to a new endpoint.
