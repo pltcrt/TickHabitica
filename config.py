@@ -3,17 +3,17 @@
 
 CONFIG = {
     "auth": {
-        "url": "https://ticktick.com/open/v1/project/6780df39ebbe9b000000063e/data",  # URL для GET-запроса
+        "url": "deleted",  # URL для GET-запроса
         "headers": {
-            "Authorization": "Bearer e5893689-9387-40de-a21b-1e315d4361a4",
+            "Authorization": "Bearer deleted",
             "Content-Type": "application/json"
         }
     },
     "post": {
-        "url": "https://habitica.com/api/v3/tasks/user",
+        "url": "deleted",
         "headers": {
-            "x-api-user": "1e05932d-5154-450d-8c7a-d7f6c00e5475",
-            "x-api-key": "7b50d847-a7ba-432c-bca2-7d573c3c61bd",
+            "x-api-user": "deleted",
+            "x-api-key": "deleted",
             "Content-Type": "application/json" }   
     }
 }
